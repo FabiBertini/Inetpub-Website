@@ -128,7 +128,8 @@ a.active, a:active, a:focus, a:hover {
     position: relative;
 }
 
-#mainNav .container img {
+/*#mainNav .container img {*/
+#logo {    
     width: 15%;
     top: 0px;
     right: 0px;
