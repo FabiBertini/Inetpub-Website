@@ -21,7 +21,7 @@ $(function() {
             }
             console.log(name);
             $.ajax({
-                url: "https://formspree.io/contact@inetpub.co.uk",
+                url: "https://api.inetpub.co.uk/contactus",
                 method: "POST",
                 data: {
                     name: name,
