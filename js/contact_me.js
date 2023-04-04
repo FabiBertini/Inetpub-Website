@@ -22,6 +22,7 @@ $(function() {
             console.log(name);
             $.ajax({
                 url: "https://api.inetpub.co.uk/contactus",
+                timeout: 30000,
                 contentType: 'application/json',
                 method: "POST",
                 data: {
