@@ -19,18 +19,19 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+            var jsonMsg = {
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    message: message
+                };
             console.log(name);
             $.ajax({
                 url: "https://api.inetpub.co.uk/contactus",
                 timeout: 30000,
                 contentType: 'application/json',
                 method: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
+                data: JSON.stringify(jsonMsg),
                 dataType: "json",
                 cache: false,
                 success: function() {
